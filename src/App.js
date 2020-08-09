@@ -13,7 +13,7 @@ function App() {
 
   return (
     <div> 
-      <Button label="登录" onClick={onHandleClick}></Button>
+      <Button width="200px" fontSize="10px" label="登录" onClick={onHandleClick}></Button>
       <span style={{color:color}}>我是一段文本</span>
       <Button onClick={setColor} label="注销"></Button>
       <div></div>
