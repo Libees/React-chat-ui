@@ -63,3 +63,21 @@ npm run storybook
 
 3. 在StoryBook 中配置 styled-components 
    1. 在 **.storybook**文件夹中，新建StoryBook中规定的 ***preview.js***进行配置
+
+
+### 配合storybook新建一个组件
+   1.组件文件夹下，新建一个react组件
+   2.新建一个*.stories.js文件，该文件
+   ```
+      import React from "react"
+      import Avatar from ".";
+
+      export default {
+      title:"Avatar",  //sotrybook组件名称
+      component:Avatar
+      }
+
+      export const Default = ()=>{
+         return <Avatar></Avatar> //组件状态样式之一
+      }
+   ```
