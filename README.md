@@ -66,8 +66,8 @@ npm run storybook
 
 
 ### 配合storybook新建一个组件
-   1.组件文件夹下，新建一个react组件
-   2.新建一个*.stories.js文件，该文件
+   1. 组件文件夹下，新建一个react组件
+   2. 新建一个*.stories.js文件，该文件
    ```
       import React from "react"
       import Avatar from ".";
