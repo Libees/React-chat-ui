@@ -11,12 +11,16 @@
 1. 用组件的方式定义css 生成对应的标签。
 代替标签中的class
 
-### 安装 npm install sytled-compoents 
-#### 使用主题
+## 安装 npm install sytled-compoents 
+### 使用主题
 1. 定义主题的js文件，js文件默认导出一个对象
 2. 在入口文件（index.js）中 导入主题js文件
 3. 导入styled-component的 ThemeProvider 
 4. 使用 <ThemeProvider  theme={theme}> 包裹主标签 传入 theme 属性
+5. 在组件总调用主题js的变量
+`
+${({theme}) => theme.primaryColor};
+`
 
 ### 使用
 1. 在js中导入styled-components
@@ -30,3 +34,15 @@ width: ${({width})=>width || "80px"};
 color:red;
 font-size:${props => props.fontSize || "18px"};`
 ```
+其中的 width 由父组件传入子组件中，再从子组件通过属性传入道styled中
+
+### styled-components获得值得方式
+使用${} 包裹变量
+1. 通过解构赋值
+`
+width: ${({width})=>width || "80px"};
+`
+2. 通过props获取
+`
+${props => props.fontSize || "18px"};
+`

@@ -4,7 +4,7 @@ import styled from "styled-components"
 function Button({label,onClick,width,fontSize}){
   const StyledButton = styled.button`
     width: ${({width})=>width || "80px"};
-    color:red;
+    color:${({theme}) => theme.primaryColor};
     font-size:${props => props.fontSize || "18px"};
   `
   function handleOnClick() {
