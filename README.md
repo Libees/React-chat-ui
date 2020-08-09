@@ -56,7 +56,10 @@ ${props => props.fontSize || "18px"};
 npx -p @storybook/cli sb init
 ```
 
-2. 使用` npm run storybook ` 运行StoryBook
+2. 运行StoryBook
+``` 
+npm run storybook 
+```
 
 3. 在StoryBook 中配置 styled-components 
    1. 在 **.storybook**文件夹中，新建StoryBook中规定的 ***preview.js***进行配置
