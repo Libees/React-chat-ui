@@ -13,19 +13,20 @@
 
 ### 安装 npm install sytled-compoents 
 #### 使用主题
-  1.定义主题的js文件，js文件默认导出一个对象
-  2.在入口文件（index.js）中 导入主题js文件
-  3.导入styled-component的 ThemeProvider 
-  4.使用 <ThemeProvider  theme={theme}> 包裹主标签 传入 theme 属性
+1.定义主题的js文件，js文件默认导出一个对象
+2.在入口文件（index.js）中 导入主题js文件
+3.导入styled-component的 ThemeProvider 
+4.使用 <ThemeProvider  theme={theme}> 包裹主标签 传入 theme 属性
 
 ### 使用
-  在js中导入styled-components
-  ```
-  import styled from "styled-components"
-  ```
-  在js中定义css `` 包裹css
+1.在js中导入styled-components
+```
+2.import styled from "styled-components"
+```
+3.在js中定义css `` 包裹css
+```
      const StyledButton = styled.button`
     width: ${({width})=>width || "80px"};
     color:red;
     font-size:${props => props.fontSize || "18px"};
-    `
+```
